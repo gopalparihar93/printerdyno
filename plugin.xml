@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugins-printdyno" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>printdyno</name>
+<js-module name="printdyno" src="www/printdyno.js">
+<clobbers target="cordova.plugins.printdyno" />
+</js-module><platform name="android">
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="printdyno">
+<param name="android-package" value="cordova-plugins-printdyno.printdyno" />
+</feature></config-file><config-file parent="/*" target="AndroidManifest.xml">
+</config-file>
+<source-file src="src/android/libs/cie-bluetooth-printer-sdk-v2.2.8.jar" target-dir="src/cordova-plugins-printdyno/printdyno" />
+</platform></plugin>
